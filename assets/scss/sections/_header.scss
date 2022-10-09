@@ -1,0 +1,210 @@
+// <!--Sc Header CSS -->
+.trm-header-section {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    padding: 25px 0;
+    @include transition(0.6s);
+    .container {
+        max-width: 1470px;
+    }
+    &:not(.trm-header-sticky) {
+        .sticky-logo {
+            display: none;
+        }
+    }
+    .trm-main-menu {
+        > ul > li {
+            margin-right: 45px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                color: $whiteColor;
+                font-size: 16px;
+                display: block;
+                @include transition();
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    &.trm-header-sticky {
+        background: $whiteColor;
+        padding: 10px 0;
+        z-index: 99;
+        .default-logo {
+            display: none;
+        }
+        .trm-main-menu > ul > li > a {
+            color: $bodyColor;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+    &.trm-header-sticky {
+        position: fixed;
+        box-shadow: 0 2px 20px rgba($color: #000000, $alpha: 0.08);
+    }
+    .header-btn2 {
+        position: relative;
+        top: 5px;
+        .first-btn {
+            margin-left: 40px;
+        }
+        .last-btn {
+            margin-left: 35px;
+        }
+    }
+    .search-icon {
+        margin-left: 25px;
+        margin-right: 15px;
+        a {
+            font-size: 20px;
+            transition: 0.4s;
+            color: $whiteColor;
+            &:hover {
+                color: $whiteColor0_8;
+            }
+        }
+    }
+    &.trm-header-sticky {
+        .search-icon {
+            a {
+                color: $primaryColor;
+            }
+        }
+    }
+    &.trm-header-sticky {
+        .banner-social-icon {
+            ul {
+                li {
+                    &::before {
+                        display: none;
+                    }
+                    a {
+                        width: 28px;
+                        height: 28px;
+                        line-height: 22px;
+                        border: 1px solid $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+    .banner-social-icon {
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    width: 28px;
+                    height: 28px;
+                    line-height: 22px;
+                    border-radius: 50%;
+                    color: $primaryColor;
+                    text-align: center;
+                    display: inline-block;
+                    background: $whiteColor;
+                    transition: 0.4s;
+                    margin-right: 5px;
+                    &:hover {
+                        background: $primaryColor;
+                        color: $whiteColor;
+                    }
+                }
+            }
+        }
+    }
+}
+.trm-header-section2 {
+    background: -webkit-gradient(linear-gradient(330deg, #6fb74d 0%, #6fb74d 5.31%, #006749 98.8%));
+    background: linear-gradient(300deg, #6fb74d 0%, #6fb74d 5.31%, #006749 98.8%);
+    position: relative;
+    .trm-main-menu {
+        > ul > li {
+            margin-right: 45px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0%;
+                background: $whiteColor;
+                top: 35px;
+                left: 0;
+                transition: 0.4s;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                color: $whiteColor;
+                font-size: 16px;
+                display: block;
+                @include transition();
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &.trm-header-sticky {
+        background: $whiteColor;
+        padding: 10px 0;
+        z-index: 99;
+        .default-logo {
+            display: none;
+        }
+        .trm-main-menu > ul > li > a {
+            color: $bodyColor;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0%;
+                background: $primaryColor;
+                top: 35px;
+                left: 0;
+                transition: 0.4s;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+/*============================================================
+[Master Stylesheet]
+
+* Template : Spria - SaaS, App & Startup HTML Template 
+* Author : SoftCoderes
+* Version:        1.0
+* Author URI : http://www.softcoders.net/ 
+
+=========================================================*/
+/*=======================================================
+TABLE OF CONTENTS:
+
+01 global Style
+02 Spacing CSS
+
+====== section stylsheet ======
+03 header section
+04 banner section
+05 about section
+06 canvas section
+07 service section
+08 feature section
+09 client section
+10 counter section
+11 price section
+12 business section
+13 testimonial section
+14 blog section
+15 apps section
+16 footer section
+====== inner page stylsheet ======
+17 breadcrumb page
+18 blog Page
+19 blog-details Page
+20 faq page
+21 contact page
+22 team Page
+====== responsive stylsheet ======
+23 responsive style  */
+
+@import "main/variable";
+
+// //*========== 01 global Style ==========*//
+@import "main/global";
+
+// //*========== 03 header section ==========*//
+@import "sections/header";
+
+//*========== 04 banner section ==========*//
+@import "sections/banner";
+
+//*========== 04 banner section ==========*//
+@import "sections/gallery";
+
+//*========== 05 about section ==========*//
+@import "sections/cta";
+
+//*========== 05 about section ==========*//
+@import "sections/social";
+
+//*========== 05 about section ==========*//
+@import "sections/date";
+
+//*========== 05 about section ==========*//
+@import "sections/prensa";
+
+//*========== 05 about section ==========*//
+@import "sections/video";
+
+//*========== 05 about section ==========*//
+@import "sections/economia";
+
+//*========== 05 about section ==========*//
+@import "sections/objetivos";
+
+//*========== 05 about section ==========*//
+@import "sections/group";
+
+//*========== 05 about section ==========*//
+@import "sections/text";
+
+//*========== 05 about section ==========*//
+@import "sections/faq";
+
+//*========== 05 about section ==========*//
+@import "sections/valorizacion";
+
+//*========== 05 about section ==========*//
+@import "sections/form";
+
+//*========== 06 canvas section ==========*//
+@import "sections/canvas";
+
+//*========== 07 service section ==========*//
+@import "sections/service";
+
+//*========== 08 feature section ==========*//
+@import "sections/feature";
+
+//*========== 10 counter section ==========*//
+@import "sections/counter";
+
+//*========== 12 business section ==========*//
+@import "sections/slider";
+
+//*========== 14 blog section ==========*//
+@import "sections/blog";
+
+//*========== 16 footer section ==========*//
+@import "sections/footer";
+
+//*========== 16 footer section ==========*//
+@import "sections/copyright";
+
+// /*########## page style ##########*/
+
+//*========== 23 responsive style ==========*//
+@import "main/responsive";

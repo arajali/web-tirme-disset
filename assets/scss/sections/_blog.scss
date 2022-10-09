@@ -1,0 +1,101 @@
+// <!--Sc Blog CSS -->
+.trm-blog-section-area {
+    padding-top: 65px;
+    padding-bottom: 85px;
+    .heading-area {
+        margin-bottom: 45px;
+    }
+    .trm-blog-item {
+        .blog-title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .blog-images {
+            overflow: hidden;
+            margin-bottom: 25px;
+            img {
+                transition: 0.4s;
+                transform: scale(1);
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .trm-blog-content {
+            a {
+                color: $primaryColor;
+                line-height: 1;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .sc-slick-slide {
+        position: relative;
+        .slick-arrow {
+            border: none;
+            padding: 0;
+            font-size: 0;
+            position: absolute;
+            top: -30px;
+            left: auto;
+            right: 40px;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+            opacity: 1;
+            visibility: visible;
+            @include transition();
+            &::before {
+                position: absolute;
+                content: "\ea64";
+                top: -10px;
+                font-family: "remixicon";
+                color: $titleColor;
+                font-size: 16px;
+                z-index: 9;
+                width: 26px;
+                height: 26px;
+                display: inline-block;
+                text-align: center;
+                line-height: 26px;
+                border-radius: 50%;
+                border: 1px solid #c5c5c5;
+                @include transition();
+                background: transparent;
+                left: -38px;
+            }
+            &:hover {
+                &::before {
+                    background: $primaryColor;
+                    color: #fff;
+                    border-color: transparent;
+                }
+            }
+        }
+        .next {
+            left: auto;
+            right: 0;
+            top: -30px;
+            &::before {
+                content: "\ea6e";
+            }
+        }
+    }
+    &.trm-blog-section-area2 {
+        padding-top: 115px;
+        padding-bottom: 55px;
+        .trm-blog-item {
+            margin-bottom: 40px;
+            .blog-images {
+                margin-bottom: 35px;
+            }
+            .trm-blog-content {
+                span {
+                    margin-bottom: 5px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

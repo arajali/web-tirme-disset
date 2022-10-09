@@ -1,0 +1,25 @@
+.trm-video-section-area {
+    background: url(../images/banner/tirme-economia.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    position: relative;
+    .trm-video-area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        a {
+            border: 2px dashed $whiteColor;
+            width: 30px;
+            height: 30px;
+            line-height: 20px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 50%;
+            color: $whiteColor;
+        }
+    }
+}

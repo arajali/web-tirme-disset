@@ -1,0 +1,190 @@
+.trm-slider-section-area {
+    background: url(../images/banner/banner_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .slider-item {
+        padding: 250px 180px 185px;
+    }
+    .slider-header-content {
+        position: relative;
+        z-index: 9;
+        .slider-title,
+        .slider-sub-title {
+            color: $whiteColor;
+        }
+        .slider-title {
+            margin-bottom: 26px;
+            font-weight: 300;
+        }
+    }
+    .slick-current {
+        .slider-header-content {
+            .slider-title,
+            .primary-btn,
+            .slider-sub-title {
+                -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: lightSpeedInLeft;
+                animation-delay: 0.5s;
+            }
+            .slider-title {
+                animation-name: fadeInDown;
+            }
+            .primary-btn {
+                animation-name: fadeInUp;
+            }
+        }
+    }
+    .slick-counter {
+        position: absolute;
+        left: 378px;
+        bottom: 45px;
+        color: #fff;
+        color: #fff;
+        .current {
+            font-size: 55px;
+        }
+    }
+    .slick-arrow {
+        font-size: 0;
+        &:before {
+            position: absolute;
+            bottom: 62px;
+            font-family: "remixicon";
+            color: #fff;
+            font-size: 30px;
+            z-index: 9;
+        }
+    }
+    .slick-prev {
+        &:before {
+            content: "\ea60";
+            left: 330px;
+        }
+    }
+    .slick-next {
+        &:before {
+            content: "\ea6c";
+            left: 450px;
+        }
+    }
+    .sc-mainslider-inner {
+        position: relative;
+    }
+    .slick-dots {
+        text-align: center;
+        max-width: 170px;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin: 0 6px;
+            button {
+                display: inline-block;
+                padding: 0;
+                height: 9px;
+                width: 9px;
+                border-radius: 50%;
+                border: 2px solid $whiteColor;
+                margin: 0;
+                font-size: 0;
+                background: transparent;
+                transition: 0.4s;
+                &:hover {
+                    background: #fff;
+                }
+            }
+        }
+    }
+    .sc-slick-slides {
+        position: relative;
+        .slick-arrow {
+            border: none;
+            padding: 0;
+            font-size: 0;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+            @include transition();
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                background: url(../images/icon/slider_2.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                left: 0;
+                right: 45px;
+                width: 26px;
+                height: 49px;
+            }
+        }
+        .next {
+            left: auto;
+            right: 80px;
+            &::before {
+                background: url(../images/icon/slider_1.png);
+                left: 45px;
+            }
+        }
+        &:hover {
+            .slick-arrow {
+                opacity: 1;
+                visibility: visible;
+            }
+            .prev {
+                left: 65px;
+            }
+            .next {
+                left: auto;
+                right: 135px;
+            }
+        }
+    }
+}
+// <!--Sc Slider CSS -->
+.trm-slider-section-area2 {
+    background: url(../images/banner/slide-que-ofrecemos-tirme.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// <!--Sc Slider CSS -->
+.trm-recogida-slider-area2 {
+    background: -webkit-gradient(linear-gradient(220deg, #396e49 0%, #396e49 6.31%, #9bbb39 98.8%));
+    background: linear-gradient(220deg, #396e49 0%, #396e49 6.31%, #9bbb39 98.8%);
+    .slider-item {
+        padding: 100px;
+        .sub-tilte {
+            font-size: 30px;
+            padding-left: 15px;
+        }
+    }
+}
+.slick-arrow {
+    border: none;
+}
+.trm-recogida-slider-area {
+    background: -webkit-gradient(linear-gradient(220deg, #dadb00 0%, #dadb00 6.31%, #96c21d 98.8%));
+    background: linear-gradient(220deg, #dadb00 0%, #dadb00 6.31%, #96c21d 98.8%);
+    .slider-item {
+        .sub-tilte {
+            font-size: 30px;
+            padding-left: 15px;
+        }
+    }
+}

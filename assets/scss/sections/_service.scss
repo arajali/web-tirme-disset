@@ -1,0 +1,127 @@
+// <!--Sc Service CSS -->
+.trm-serice-section-area {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .trm-service-area {
+        margin: 0;
+        position: relative;
+        z-index: 9;
+    }
+}
+// <!--Sc Service CSS -->
+.services-area {
+    border-radius: 5px;
+    .trm-service-content {
+        background: -webkit-gradient(linear-gradient(215deg, #61b168 0%, #91c026 45.31%, #91c026 98.8%));
+        background: linear-gradient(215deg, #61b168 0%, #91c026 45.31%, #91c026 98.8%);
+        padding: 40px 20px 25px;
+        min-height: 255px;
+        border-radius: 5px 5px 0 0;
+        svg {
+            margin-bottom: 20px;
+        }
+        .valorización {
+            max-width: 76.88px;
+        }
+        .energética {
+            max-width: 107.51px;
+        }
+        .eliminación {
+            max-width: 99.92px;
+        }
+        .residuos {
+            max-width: 115.17px;
+        }
+        .service-title {
+            line-height: 1;
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+    .serivce-image img {
+        width: 100%;
+    }
+    .content-gradient-two {
+        background: -webkit-gradient(linear-gradient(180deg, #73b84b 0%, #00704b 45.31%, #00704b 98.8%));
+        background: linear-gradient(240deg, #73b84b 0%, #00704b 45.31%, #00704b 98.8%);
+    }
+    .content-gradient-three {
+        background-image: linear-gradient();
+        background: -webkit-gradient(linear-gradient(180deg, #8fbf2e 0%, #d6d900 45.31%, #d6d900 98.8%));
+        background: linear-gradient(250deg, #8fbf2e 0%, #d6d900 45.31%, #d6d900 98.8%);
+    }
+    .content-gradient-four {
+        background: -webkit-gradient(linear-gradient(180deg, #91c026 0%, #91c026 45.31%, #91c026 98.8%));
+        background: linear-gradient(200deg, #91c026 0%, #76b947 45.31%, #76b947 98.8%);
+    }
+}
+// <!--Sc Service CSS -->
+.trm-serice-section-area2 {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    .services-area {
+        border-radius: 8px;
+        .service-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .trm-service-content {
+            border-radius: 8px;
+            padding: 40px 20px 25px;
+        }
+    }
+    .content-gradient-two {
+        background: -webkit-gradient(linear-gradient(220deg, #326a4c 0%, #00704b 45.31%, #00704b 98.8%));
+        background: linear-gradient(220deg, #326a4c 0%, #326a4c 45.31%, #83b155 98.8%);
+    }
+    .content-gradient-three {
+        background-image: linear-gradient();
+        background: -webkit-gradient(linear-gradient(180deg, #8fbf2e 0%, #d6d900 45.31%, #d6d900 98.8%));
+        background: linear-gradient(250deg, #8fbf2e 0%, #d6d900 45.31%, #d6d900 98.8%);
+    }
+    .content-gradient-four {
+        background: -webkit-gradient(linear-gradient(180deg, #91c026 0%, #91c026 45.31%, #91c026 98.8%));
+        background: linear-gradient(200deg, #91c026 0%, #76b947 45.31%, #76b947 98.8%);
+    }
+}
+// <!--Sc Service CSS -->
+.trm-serice-section-area3 {
+    padding-top: 115px;
+    padding-bottom: 70px;
+    .serivce-box {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .services-area-one {
+        background: #94bb48;
+    }
+    .services-area-two {
+        background: #bfcd2d;
+    }
+    .services-area-three {
+        background: #6d9e52;
+    }
+    .trm-service-content-two {
+        background: -webkit-gradient(linear-gradient(180deg, #9fc03b 0%, #95bb46 45.31%, #95bb46 98.8%));
+        background: linear-gradient(180deg, #9fc03b 0%, #95bb46 45.31%, #95bb46 98.8%);
+    }
+    .trm-service-content-three {
+        background-image: linear-gradient();
+        background: -webkit-gradient(linear-gradient(220deg, #bdcd2d 0%, #bdcd2d 45.31%, #bdcd2d 98.8%));
+        background: linear-gradient(220deg, #bdcd2d 0%, #bdcd2d 45.31%, #bdcd2d 98.8%);
+    }
+    .trm-service-content-four {
+        background: -webkit-gradient(linear-gradient(370deg, #598c50 0%, #80af54 45.31%, #85b355 98.8%));
+        background: linear-gradient(370deg, #80af54 0%, #598c50 45.31%, #598c50 98.8%);
+    }
+    .trm-service-content {
+        padding: 35px 30px 15px;
+        border-radius: 0;
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.trm-form-section-area {
+    background: $thirdColor;
+    padding-top: 65px;
+    padding-bottom: 70px;
+    .heading-area {
+        margin-bottom: 40px;
+    }
+    .form-box {
+        margin-bottom: 15px;
+        label {
+            margin-bottom: 5px;
+        }
+        textarea,
+        input {
+            background: $whiteColor;
+            width: 100%;
+            border: 1px solid #c5c5c5;
+            border-radius: 5px;
+            padding: 8px 0;
+        }
+        textarea {
+            height: 200px;
+        }
+    }
+    .form-area {
+        padding-right: 45px;
+    }
+    .progress-area {
+        padding-left: 10px;
+        .title {
+            font-size: 50px;
+        }
+    }
+    .progress-area {
+        .progress {
+            margin-bottom: 20px;
+            background: transparent;
+            height: 55px;
+            position: relative;
+            .progress-bar {
+                width: 0;
+                animation: progress 1.5s ease-in-out forwards;
+                text-align: right;
+                border-radius: 5px;
+                .progress-title {
+                    position: absolute;
+                    top: 8px;
+                    left: 20px;
+                    opacity: 0;
+                    font-size: 18px;
+                    animation: show 0.35s forwards ease-in-out 0.5s;
+                }
+                span {
+                    font-size: 18px;
+                }
+            }
+            .title1 {
+                padding-right: 20px;
+            }
+            .title2 {
+                padding-right: 10px;
+            }
+            .title3 {
+                padding-right: 25px;
+            }
+            .title4 {
+                padding-right: 15px;
+            }
+            .progress-bar-color {
+                background: -webkit-gradient(linear-gradient(215deg, #61b168 0%, #91c026 45.31%, #91c026 98.8%));
+                background: linear-gradient(215deg, #61b168 0%, #91c026 45.31%, #91c026 98.8%);
+            }
+            .progress-bar-color-two {
+                background: -webkit-gradient(linear-gradient(330deg, #91c026 0%, #006749 45.31%, #006749 98.8%));
+                background: linear-gradient(300deg, #91c026 0%, #006749 45.31%, #006749 98.8%);
+            }
+            .progress-bar-color-three {
+                background: -webkit-gradient(linear-gradient(220deg, #dadb00 0%, #dadb00 45.31%, #96c21d 98.8%));
+                background: linear-gradient(220deg, #dadb00 0%, #dadb00 45.31%, #96c21d 98.8%);
+            }
+            .progress-bar-color-four {
+                background: -webkit-gradient(linear-gradient(215deg, #94c022 0%, #94c022 45.31%, #61b168 98.8%));
+                background: linear-gradient(215deg, #94c022 0%, #94c022 130.31%, #61b168 98.8%);
+            }
+            .progress-bar-color-five {
+                background: -webkit-gradient(linear-gradient(235deg, #006749 0, #006749 45.31%, #91c026 98.8%));
+                background: linear-gradient(235deg, #006749 0, #006749 45.31%, #91c026 98.8%);
+            }
+            .progress-bar-color-six {
+                background: -webkit-gradient(linear-gradient(220deg, #96c21d 0%, #dadb00 45.31%, #dadb00 98.8%));
+                background: linear-gradient(220deg, #96c21d 0%, #dadb00 45.31%, #dadb00 98.8%);
+            }
+        }
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes show {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+}

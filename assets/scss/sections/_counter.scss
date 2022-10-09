@@ -1,0 +1,71 @@
+// <!--Sc Counter CSS -->
+.trm-counter-section-area {
+    padding-top: 100px;
+    padding-bottom: 75px;
+    .counter-wrapper {
+        max-width: 1130px;
+    }
+    .heading-area {
+        margin-bottom: 45px;
+    }
+    .odometer {
+        font-size: 60px;
+        color: $secondaryColor;
+        font-weight: 600;
+    }
+    .trm-counter-content-box {
+        .counter-image {
+            margin-right: 40px;
+            margin-top: 15px;
+        }
+        .sc-counter-box {
+            .trm-counter {
+                font-size: 60px;
+                color: $secondaryColor;
+                margin-bottom: 10px;
+                display: block;
+                font-weight: 600;
+            }
+            .description {
+                line-height: 1.3;
+                font-weight: 300;
+                max-width: 140px;
+            }
+        }
+    }
+}
+// <!--Sc Counter CSS -->
+.trm-counter-section-area2 {
+    background: $thirdColor;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    .heading-area {
+        span {
+            font-weight: 300;
+        }
+    }
+    .trm-counter-content-box {
+        .counter-image {
+            margin-right: 15px;
+            max-width: 80px;
+        }
+        .sc-counter-box {
+            .sc-count {
+                color: $secondaryColor;
+                margin-bottom: 0;
+                font-weight: 300;
+                font-size: 55px;
+                line-height: 0;
+            }
+            .odometer {
+                font-size: 55px;
+                color: $secondaryColor;
+                margin-bottom: 0;
+                font-weight: 300;
+            }
+            p {
+                line-height: 1.2;
+            }
+        }
+    }
+}

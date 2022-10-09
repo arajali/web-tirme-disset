@@ -1,0 +1,15 @@
+.trm-social-section-area {
+    padding-top: 105px;
+    padding-bottom: 90px;
+    .trm-social-content {
+        padding-right: 30px;
+    }
+    .trm-social-group {
+        .trm-social-image {
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
