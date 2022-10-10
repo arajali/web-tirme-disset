@@ -109,3 +109,110 @@
         }
     }
 }
+// trm-form-media-section-area
+.trm-form-media-section-area {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    .heading-area {
+        margin-bottom: 15px;
+    }
+    .heading-form {
+        margin-bottom: 0;
+        .title {
+            margin-bottom: 0;
+        }
+    }
+    .form-title {
+        margin-bottom: 0;
+    }
+    .trm-form-content {
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 55px;
+        margin-bottom: 65px;
+        .heading-area {
+            .title {
+                margin-bottom: 0;
+            }
+        }
+        .form-title {
+            font-size: 30px;
+        }
+    }
+    .trm-form-media-list {
+        ul {
+            li {
+                display: inline-block;
+                padding-right: 15px;
+                a {
+                    background: $primaryColor;
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 45px;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 1px solid transparent;
+                    transition: 0.4s;
+                    font-size: 30px;
+                    color: $whiteColor;
+                    &:hover {
+                        border-color: $primaryColor;
+                        background: transparent;
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+    .trm-select-form-box {
+        .select-box {
+            width: 100%;
+            border: 1px solid #979797;
+            padding: 7px 10px;
+            border-radius: 5px;
+        }
+        .form-box {
+            textarea,
+            input {
+                width: 100%;
+                border: 1px solid #979797;
+                padding: 6px 10px;
+                border-radius: 5px;
+            }
+            textarea {
+                height: 225px;
+                margin-bottom: 10px;
+            }
+        }
+        .form-title {
+            margin-bottom: 15px;
+        }
+    }
+}
+// trm-form-media-section-area
+.trm-form-media-section-area2 {
+    padding-top: 90px;
+    background: $thirdColor;
+    .heading-area {
+        margin-bottom: 0;
+        .media-title {
+            margin-bottom: 0;
+        }
+    }
+    .trm-select-form-box {
+        max-width: 950px;
+    }
+
+    .text-bottom {
+        margin-bottom: 20px;
+    }
+}
+// trm-form-media-section-area
+.trm-form-test-section-area {
+    padding-top: 105px;
+    .heading-area {
+        span {
+            font-weight: 300;
+        }
+    }
+}

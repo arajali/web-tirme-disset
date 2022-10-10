@@ -1,14 +1,10 @@
 // <!--Sc Feature CSS -->
 .trm-feature-section-area {
     background: $thirdColor;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     padding-top: 60px;
-    .trm-feature-image {
-        img {
-            min-height: 525px;
-        }
-    }
     .trm-feature-content {
+        padding-left: 20px;
         .feature-title {
             font-size: 60px;
             margin-bottom: 30px;
@@ -28,14 +24,11 @@
 .trm-feature-section-area2 {
     background: $thirdColor;
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 45px;
     .trm-feature-image {
-        img {
-            min-height: 510px;
-        }
+        padding-right: 25px;
     }
     .trm-feature-content {
-        padding-left: 25px;
         .primary-btn {
             margin-top: 70px;
         }
@@ -48,11 +41,6 @@
     .heading-area {
         span {
             font-weight: 300;
-        }
-    }
-    .trm-feature-image {
-        img {
-            min-height: 800px;
         }
     }
 }

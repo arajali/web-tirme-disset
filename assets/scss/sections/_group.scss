@@ -2,17 +2,15 @@
     background: -webkit-gradient(linear-gradient(220deg, #dadb00 0%, #dadb00 45.31%, #96c21d 98.8%));
     background: linear-gradient(220deg, #dadb00 0%, #dadb00 45.31%, #96c21d 98.8%);
     padding-top: 100px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
     .trm-group-box {
         position: relative;
+        margin-right: 60px;
         .group-btn {
             margin-bottom: 70px;
         }
         .group-btn-area {
             margin-bottom: 5px;
-            .trm-btn {
-                padding-left: 28px;
-            }
         }
         .trm_shape1 {
             position: absolute;
@@ -23,6 +21,7 @@
             position: absolute;
             left: 50%;
             top: 68px;
+            transform: translateX(-50%);
         }
         .trm_shape3 {
             position: absolute;
@@ -35,5 +34,17 @@
             color: #000000;
             font-weight: 600;
         }
+    }
+    .trm-btn {
+        position: relative;
+    }
+    .trm-group-content {
+        padding-left: 30px;
+    }
+    .tecnica {
+        left: 12px;
+    }
+    .direccion {
+        left: 16px;
     }
 }

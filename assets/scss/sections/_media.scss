@@ -1,0 +1,13 @@
+.trm-media-banner-area {
+    background: url(../images/banner/slide-media-tirme.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    .banner-media-content {
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

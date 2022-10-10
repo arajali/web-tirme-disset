@@ -167,8 +167,12 @@
 .trm-recogida-slider-area2 {
     background: -webkit-gradient(linear-gradient(220deg, #396e49 0%, #396e49 6.31%, #9bbb39 98.8%));
     background: linear-gradient(220deg, #396e49 0%, #396e49 6.31%, #9bbb39 98.8%);
+    padding-top: 100px;
     .slider-item {
-        padding: 100px;
+        padding: 0;
+        img {
+            margin-bottom: 95px;
+        }
         .sub-tilte {
             font-size: 30px;
             padding-left: 15px;
@@ -181,7 +185,12 @@
 .trm-recogida-slider-area {
     background: -webkit-gradient(linear-gradient(220deg, #dadb00 0%, #dadb00 6.31%, #96c21d 98.8%));
     background: linear-gradient(220deg, #dadb00 0%, #dadb00 6.31%, #96c21d 98.8%);
+    padding-top: 100px;
     .slider-item {
+        padding: 0;
+        img {
+            margin-bottom: 95px;
+        }
         .sub-tilte {
             font-size: 30px;
             padding-left: 15px;

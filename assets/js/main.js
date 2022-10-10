@@ -3,21 +3,66 @@
 
     $(".sc-slick-slides").each(function () {
         var $this = $(this),
-            slidestoshow = typeof $(this).data("slidestoshow") != "undefined" && $(this).data("slidestoshow").length != 0 ? $(this).data("slidestoshow") : 1,
-            speed = typeof $(this).data("speed") != "undefined" && $(this).data("speed").length != 0 ? $(this).data("speed") : 500,
-            slidesToScroll = typeof $(this).data("slidesToScroll") != "undefined" && $(this).data("slidesToScroll").length != 0 ? $(this).data("slidesToScroll") : 1,
-            centerMode = typeof $(this).data("centerMode") != "undefined" && $(this).data("centerMode").length != 0 ? $(this).data("centerMode") : false,
-            centerPadding = typeof $(this).data("centerPadding") != "undefined" && $(this).data("centerPadding").length != 0 ? $(this).data("centerPadding") : "0",
-            autoplay = typeof $(this).data("autoplay") != "undefined" && $(this).data("autoplay").length != 0 ? $(this).data("autoplay") : true,
-            arrows = typeof $(this).data("arrows") != "undefined" && $(this).data("arrows").length != 0 ? $(this).data("arrows") : true,
-            dots = typeof $(this).data("dots") != "undefined" && $(this).data("dots").length != 0 ? $(this).data("dots") : false,
-            prevArrow = typeof $(this).data("prevArrow") != "undefined" && $(this).data("prevArrow").length != 0 ? $(this).data("prevArrow") : '<button class="prev">←</button>',
-            nextArrow = typeof $(this).data("nextArrow") != "undefined" && $(this).data("nextArrow").length != 0 ? $(this).data("nextArrow") : '<button class="next">→</button>',
-            mobile_view = typeof $(this).data("mobile_view") != "undefined" && $(this).data("mobile_view").length != 0 ? $(this).data("mobile_view") : 1,
-            sm_tablet_view = typeof $(this).data("small_tablet_view") != "undefined" && $(this).data("small_tablet_view").length != 0 ? $(this).data("small_tablet_view") : 1,
-            tablet_view = typeof $(this).data("tablet_view") != "undefined" && $(this).data("tablet_view").length != 0 ? $(this).data("tablet_view") : 1,
-            laptop_view = typeof $(this).data("laptop_view") != "undefined" && $(this).data("laptop_view").length != 0 ? $(this).data("laptop_view") : 1,
-            main_view = typeof $(this).data("1200") != "undefined" && $(this).data("1200").length != 0 ? $(this).data("1200") : 1;
+            slidestoshow =
+                typeof $(this).data("slidestoshow") != "undefined" && $(this).data("slidestoshow").length != 0
+                    ? $(this).data("slidestoshow")
+                    : 1,
+            speed =
+                typeof $(this).data("speed") != "undefined" && $(this).data("speed").length != 0
+                    ? $(this).data("speed")
+                    : 500,
+            slidesToScroll =
+                typeof $(this).data("slidesToScroll") != "undefined" && $(this).data("slidesToScroll").length != 0
+                    ? $(this).data("slidesToScroll")
+                    : 1,
+            centerMode =
+                typeof $(this).data("centerMode") != "undefined" && $(this).data("centerMode").length != 0
+                    ? $(this).data("centerMode")
+                    : false,
+            centerPadding =
+                typeof $(this).data("centerPadding") != "undefined" && $(this).data("centerPadding").length != 0
+                    ? $(this).data("centerPadding")
+                    : "0",
+            autoplay =
+                typeof $(this).data("autoplay") != "undefined" && $(this).data("autoplay").length != 0
+                    ? $(this).data("autoplay")
+                    : true,
+            arrows =
+                typeof $(this).data("arrows") != "undefined" && $(this).data("arrows").length != 0
+                    ? $(this).data("arrows")
+                    : true,
+            dots =
+                typeof $(this).data("dots") != "undefined" && $(this).data("dots").length != 0
+                    ? $(this).data("dots")
+                    : false,
+            prevArrow =
+                typeof $(this).data("prevArrow") != "undefined" && $(this).data("prevArrow").length != 0
+                    ? $(this).data("prevArrow")
+                    : '<button class="prev">←</button>',
+            nextArrow =
+                typeof $(this).data("nextArrow") != "undefined" && $(this).data("nextArrow").length != 0
+                    ? $(this).data("nextArrow")
+                    : '<button class="next">→</button>',
+            mobile_view =
+                typeof $(this).data("mobile_view") != "undefined" && $(this).data("mobile_view").length != 0
+                    ? $(this).data("mobile_view")
+                    : 1,
+            sm_tablet_view =
+                typeof $(this).data("small_tablet_view") != "undefined" && $(this).data("small_tablet_view").length != 0
+                    ? $(this).data("small_tablet_view")
+                    : 1,
+            tablet_view =
+                typeof $(this).data("tablet_view") != "undefined" && $(this).data("tablet_view").length != 0
+                    ? $(this).data("tablet_view")
+                    : 1,
+            laptop_view =
+                typeof $(this).data("laptop_view") != "undefined" && $(this).data("laptop_view").length != 0
+                    ? $(this).data("laptop_view")
+                    : 1,
+            main_view =
+                typeof $(this).data("1200") != "undefined" && $(this).data("1200").length != 0
+                    ? $(this).data("1200")
+                    : 1;
 
         // alert(mobile_view);
         $($this).slick({
@@ -210,5 +255,13 @@
             $(".pricing-monthly").css("display", "block");
             $(".pricing-yearly").css("display", "none");
         }
+    });
+
+    $(".centerMode-slider").slick({
+        centerMode: true,
+        infinite: true,
+        centerPadding: "0px",
+        speed: 500,
+        variableWidth: true,
     });
 })(jQuery);

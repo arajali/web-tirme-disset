@@ -1,0 +1,92 @@
+.trm-testimonial-section-area {
+    background: $thirdColor;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    .container-fluid {
+        max-width: 1500px;
+        padding: 0 30px;
+    }
+    .trm-testimonial-text {
+        position: absolute;
+        max-width: 400px;
+        right: 18.5%;
+        top: 100px;
+    }
+    .centerMode-slider {
+        position: relative;
+        &::after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 120px;
+            height: 26%;
+            background: -webkit-linear-gradient(270deg, #e2f1da 32%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(270deg, #e2f1da 32%, rgba(255, 255, 255, 0) 100%);
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+        .serivce-box img {
+            bottom: 0;
+            width: 200px;
+            height: 130px;
+        }
+        .slick-center img {
+            transform: scale(1);
+            width: 750px;
+            height: 500px;
+        }
+        .slick-track {
+            left: -200px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .slick-arrow {
+            border: none;
+            padding: 0;
+            font-size: 0;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+            @include transition();
+            &::before {
+                position: absolute;
+                content: "";
+                top: 160px;
+                background: url(../images/icon/slider_pre.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                left: 0;
+                width: 26px;
+                height: 49px;
+            }
+        }
+        .slick-next {
+            left: auto;
+            right: 0;
+            &::before {
+                background: url(../images/icon/slider_next.png);
+                left: 0;
+            }
+        }
+        &:hover {
+            .slick-arrow {
+                opacity: 1;
+                visibility: visible;
+            }
+            .slick-prev {
+                left: 0;
+            }
+            .slick-next {
+                right: -50px;
+            }
+        }
+    }
+}

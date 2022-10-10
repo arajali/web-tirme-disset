@@ -9,15 +9,20 @@
         float: left;
     }
 }
+.trm-banner-btn {
+}
 
 @media only screen and (max-width: 1650px) {
     .trm-banner-section-area .trm-banner-item .banner-header-content {
         margin-left: 28.5%;
     }
+    .trm-testimonial-section-area .trm-testimonial-text {
+        right: 12%;
+    }
 }
 @media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1290px;
+        max-width: 1300px;
     }
 }
 @media only screen and (max-width: 1520px) {
@@ -30,6 +35,9 @@
     }
 }
 @media only screen and (max-width: 1440px) {
+    .trm-testimonial-section-area .trm-testimonial-text {
+        right: 8%;
+    }
 }
 
 /*as col-md*/
@@ -50,6 +58,22 @@
     }
     .trm-blog-section-area .trm-blog-content .content-title {
         font-size: 28px;
+    }
+    .trm-testimonial-section-area .trm-testimonial-text {
+        right: 0;
+    }
+    .trm-feature-section-area2 .trm-feature-content .primary-btn {
+        margin-top: 30px;
+    }
+    .trm-group-section-area .trm-group-box {
+        position: relative;
+        margin-right: 20px;
+    }
+    .trm-group-section-area .tecnica {
+        left: 50px;
+    }
+    .trm-group-section-area .direccion {
+        left: 27px;
     }
 }
 
@@ -83,8 +107,29 @@
     .trm-objetivous-section-area .trm-objetivous-item .objetivous-img {
         width: 27%;
     }
+    .trm-testimonial-section-area .trm-testimonial-text {
+        right: 0;
+    }
+    .trm-testimonial-section-area .trm-testimonial-text {
+        position: relative !important;
+        margin-bottom: 150px;
+    }
 }
-
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .trm-group-section-area .tecnica {
+        left: 0;
+    }
+    .trm-group-section-area .trm-group-box .trm_shape3,
+    .trm-group-section-area .trm-group-box .trm_shape1 {
+        max-width: 65px;
+    }
+    .trm-group-section-area .trm-group-box .group-btn {
+        margin-bottom: 38px;
+    }
+    .trm-group-section-area .trm-group-box .trm_shape2 img {
+        max-height: 135px;
+    }
+}
 /*as col-sm*/
 /*large mobile device*/
 @media only screen and (min-width: 992px) {
@@ -112,7 +157,7 @@
     }
     .trm-feature-section-area {
         .trm-feature-image {
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
     }
     .trm-feature-section-area .trm-feature-content .feature-title {
@@ -127,9 +172,6 @@
     }
     .trm-counter-section-area {
         padding-top: 65px;
-    }
-    .trm-counter-section-area .counter-title {
-        margin-bottom: 45px;
     }
     .trm-counter-section-area .trm-counter-content-box {
         margin-bottom: 30px;
@@ -187,6 +229,7 @@
     .trm-feature-section-area2 .trm-feature-content {
         padding-left: 0;
     }
+    .trm-counter-section-area .counter-title,
     .trm-group-section-area .trm-group-box,
     .trm-feature-section-area2 .trm-feature-image {
         margin-bottom: 45px;
@@ -270,8 +313,46 @@
     .trm-cta-section-area6 {
         padding-bottom: 70px;
     }
-    .trm-feature-section-area3 .trm-feature-image {
+    .trm-feature-section-area3 .trm-feature-image,
+    .trm-contract-section-area2 .trm-contract-group:last-child,
+    .trm-text-section-area2 .heading-area {
         margin-bottom: 50px;
+    }
+    .trm-social-section-area .trm-social-content {
+        padding-right: 0;
+        margin-bottom: 45px;
+    }
+    .trm-prensa-section-area .trm-prensa-content .trm-prensa-text:last-child {
+        margin-bottom: 55px;
+    }
+    .trm-contract-section-area,
+    .trm-prensa-section-area,
+    .trm-blog-section-area.trm-blog-section-area2 {
+        padding-top: 65px;
+    }
+    .trm-contract-section-area3 .trm-contract-image {
+        margin-bottom: 60px;
+    }
+    .trm-date-section-area .date-list {
+        margin-bottom: 40px;
+    }
+    .trm-header-section {
+        padding: 12px 0;
+    }
+    .trm-group-section-area .direccion {
+        left: -22px;
+    }
+    .trm-group-section-area .trm-group-box {
+        margin-right: 0;
+    }
+    .trm-testimonial-section-area {
+        padding-top: 0;
+    }
+    .trm-cta-section-area7 {
+        padding-bottom: 65px;
+    }
+    .trm-feature-section-area4 {
+        padding-bottom: 40px;
     }
 }
 
@@ -305,6 +386,49 @@
     }
     .trm-cta-section-area5 .cta-area {
         padding-left: 0 !important;
+    }
+    .trm-contract-section-area .trm-contract-group .trm-contract-content .contract-title {
+        font-size: 24px;
+    }
+    .trm-group-section-area .trm-group-box .group-btn-area {
+        max-width: 330px;
+        margin: 0 auto 35px;
+    }
+    .trm-group-section-area .direccion,
+    .trm-group-section-area .tecnica {
+        left: 0;
+        max-width: 150px;
+        line-height: 1.2;
+    }
+    .trm-group-section-area .trm-group-box .group-btn {
+        margin-bottom: 35px;
+    }
+    .trm-group-section-area .trm-group-box .trm_shape1,
+    .trm-group-section-area .trm-group-box .trm_shape3 {
+        display: none;
+    }
+    .trm-group-section-area .trm-group-box .group-btn {
+        position: relative;
+    }
+    .trm-group-section-area .direccion:after,
+    .trm-group-section-area .tecnica:after {
+        content: "";
+        position: absolute;
+        top: -48px;
+        width: 2px;
+        height: 50px;
+        background: #fff;
+        right: 30px;
+    }
+    .trm-group-section-area .direccion:after {
+        right: auto;
+        left: 30px;
+    }
+    .trm-counter-section-area .trm-counter-content-box .counter-image {
+        margin-right: 30px;
+    }
+    .trm-counter-section-area .odometer {
+        font-size: 50px;
     }
 }
 
@@ -358,6 +482,19 @@
     .trm-recogida-slider-area .slider-item .sub-tilte,
     .trm-recogida-slider-area2 .slider-item .sub-tilte {
         font-size: 16px;
+    }
+    .trm-prensa-section-area .trm-prensa-content .trm-prensa-text h2 {
+        font-size: 22px;
+    }
+    .trm-contract-section-area .primary-btn {
+        padding: 6px 20px;
+    }
+    .trm-contract-section-area .trm-contract-group .trm-contract-content .contract-title {
+        font-size: 18px;
+    }
+    .trm-group-section-area .direccion,
+    .trm-group-section-area .tecnica {
+        max-width: 140px;
     }
 }
 /*small mobile device*/
