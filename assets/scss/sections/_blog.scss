@@ -7,7 +7,7 @@
     }
     .trm-blog-item {
         .blog-title {
-            font-size: 30px;
+            font-size: 29px;
             font-weight: 700;
         }
         .blog-images {
@@ -23,11 +23,15 @@
         }
         .trm-blog-content {
             a {
-                color: $primaryColor;
+                color: #006747;
                 line-height: 1;
                 &:hover {
                     opacity: 0.8;
                 }
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.2;
             }
         }
     }
@@ -91,9 +95,12 @@
                 margin-bottom: 35px;
             }
             .trm-blog-content {
+                .blog-title {
+                }
                 span {
                     margin-bottom: 5px;
                     display: block;
+                    font-size: 20px;
                 }
             }
         }

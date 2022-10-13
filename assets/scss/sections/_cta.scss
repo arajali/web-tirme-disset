@@ -39,6 +39,9 @@
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 180px;
+    .cta-text {
+        font-weight: 400;
+    }
 }
 // <!--Sc Cta CSS -->
 .trm-cta-section-area4 {
@@ -50,6 +53,11 @@
     padding-bottom: 70px;
     .trm-cta-content-area {
         max-width: 710px;
+        .trm-cta-text {
+            p {
+                font-weight: 400;
+            }
+        }
     }
 }
 // <!--Sc Cta CSS -->

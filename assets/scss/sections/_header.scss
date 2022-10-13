@@ -26,16 +26,54 @@
         li {
             display: inline-block;
             position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0%;
+                background: $whiteColor;
+                top: 28px;
+                left: 0;
+                transition: 0.4s;
+            }
             &:last-child {
                 margin-right: 0;
             }
             a {
                 color: $whiteColor;
-                font-size: 16px;
+                font-size: 18px;
+                font-weight: 400;
                 display: block;
                 @include transition();
                 &:hover {
                     opacity: 0.8;
+                }
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &.trm-header-sticky {
+        ul {
+            li {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 0;
+                    background: $primaryColor;
+                    top: 28px;
+                    left: 0;
+                    transition: 0.4s;
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -113,7 +151,7 @@
                     height: 28px;
                     line-height: 22px;
                     border-radius: 50%;
-                    color: $primaryColor;
+                    color: $secondaryColor;
                     text-align: center;
                     display: inline-block;
                     background: $whiteColor;
@@ -132,6 +170,9 @@
     background: -webkit-gradient(linear-gradient(330deg, #6fb74d 0%, #6fb74d 5.31%, #006749 98.8%));
     background: linear-gradient(300deg, #6fb74d 0%, #6fb74d 5.31%, #006749 98.8%);
     position: relative;
+    .container {
+        max-width: 1470px;
+    }
     .trm-main-menu {
         > ul > li {
             margin-right: 45px;
@@ -151,7 +192,7 @@
                 height: 2px;
                 width: 0%;
                 background: $whiteColor;
-                top: 35px;
+                top: 28px;
                 left: 0;
                 transition: 0.4s;
             }
@@ -160,7 +201,8 @@
             }
             a {
                 color: $whiteColor;
-                font-size: 16px;
+                font-size: 18px;
+                font-weight: 400;
                 display: block;
                 @include transition();
                 &:hover {
@@ -170,6 +212,38 @@
             &:hover {
                 &::before {
                     width: 100%;
+                }
+            }
+            &.active {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    background: $whiteColor;
+                    top: 28px;
+                    left: 0;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+    &.trm-header-sticky {
+        ul {
+            li {
+                &.active {
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background: $primaryColor;
+                        top: 28px;
+                        left: 0;
+                        transition: 0.4s;
+                    }
                 }
             }
         }

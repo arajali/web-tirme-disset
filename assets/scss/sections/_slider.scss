@@ -4,9 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    .slider-item {
-        padding: 250px 180px 185px;
-    }
     .slider-header-content {
         position: relative;
         z-index: 9;
@@ -16,7 +13,10 @@
         }
         .slider-title {
             margin-bottom: 26px;
-            font-weight: 300;
+            font-weight: 400;
+        }
+        span {
+            font-weight: 600;
         }
     }
     .slick-current {
@@ -72,9 +72,6 @@
             left: 450px;
         }
     }
-    .sc-mainslider-inner {
-        position: relative;
-    }
     .slick-dots {
         text-align: center;
         max-width: 170px;
@@ -103,6 +100,14 @@
                     background: #fff;
                 }
             }
+        }
+        .slick-active {
+            background: #fff;
+            width: 9px;
+            height: 9px;
+            font-size: 0;
+            display: inline-block;
+            border-radius: 50%;
         }
     }
     .sc-slick-slides {
@@ -156,26 +161,59 @@
         }
     }
 }
+.trm-slider-section-area2,
+.trm-slider-section-area1 {
+    .slider-header-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 370px 20px 320px;
+    }
+}
+
 // <!--Sc Slider CSS -->
 .trm-slider-section-area2 {
     background: url(../images/banner/slide-que-ofrecemos-tirme.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .slider-item {
+        .slider-header-content {
+            padding: 230px 20px 295px;
+            .header-title {
+                font-size: 32px;
+                font-weight: 300;
+                margin-bottom: 5px;
+            }
+            .heading-area {
+                .title {
+                    margin-bottom: 0;
+                }
+            }
+            p {
+                max-width: 450px;
+            }
+            h3 {
+                font-size: 42px;
+                font-weight: 700;
+                margin-bottom: 45px;
+            }
+        }
+    }
 }
 // <!--Sc Slider CSS -->
 .trm-recogida-slider-area2 {
     background: -webkit-gradient(linear-gradient(220deg, #396e49 0%, #396e49 6.31%, #9bbb39 98.8%));
     background: linear-gradient(220deg, #396e49 0%, #396e49 6.31%, #9bbb39 98.8%);
-    padding-top: 100px;
     .slider-item {
-        padding: 0;
-        img {
-            margin-bottom: 95px;
+        .slider-header-content {
+            max-width: 1050px;
+            margin: 0 auto 100px;
+            padding: 105px 30px 0px !important;
         }
         .sub-tilte {
             font-size: 30px;
             padding-left: 15px;
+            font-weight: 300;
         }
     }
 }
@@ -185,15 +223,19 @@
 .trm-recogida-slider-area {
     background: -webkit-gradient(linear-gradient(220deg, #dadb00 0%, #dadb00 6.31%, #96c21d 98.8%));
     background: linear-gradient(220deg, #dadb00 0%, #dadb00 6.31%, #96c21d 98.8%);
-    padding-top: 100px;
     .slider-item {
-        padding: 0;
+        .slider-header-content {
+            max-width: 1050px;
+            margin: 0 auto 100px;
+            padding: 105px 30px 0px !important;
+        }
         img {
             margin-bottom: 95px;
         }
         .sub-tilte {
             font-size: 30px;
             padding-left: 15px;
+            font-weight: 300;
         }
     }
 }

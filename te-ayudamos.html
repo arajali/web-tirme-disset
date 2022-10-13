@@ -50,11 +50,11 @@
                             <!-- Mainmenu Section Start -->
                             <div class="trm-main-menu">
                                 <ul class="main-menu">
-                                    <li><a href="#">Somos Tirme</a></li>
-                                    <li><a href="#">Qué ofrecemos</a></li>
-                                    <li><a href="#">Lo vivimos</a></li>
-                                    <li><a href="#">Tirme al día</a></li>
-                                    <li><a href="#">Tu visita</a></li>
+                                    <li><a href="somos-tirme.html">Somos Tirme</a></li>
+                                    <li><a href="que-ofrecemos.html">Qué ofrecemos</a></li>
+                                    <li><a href="lo-vivimos.html">Lo vivimos</a></li>
+                                    <li><a href="tirme-al-dia.html">Tirme al día</a></li>
+                                    <li><a href="tu-visita.html">Tu visita</a></li>
                                 </ul>
                             </div>
                             <!-- Mainmenu Section End -->
@@ -88,6 +88,26 @@
             </div>
         </header>
         <!--=====================================-->
+        <!--=       Map Section Start       =-->
+        <!--=====================================-->
+        <div class="trm-map-section-area">
+            <div class="container-fluid p-0">
+                <div class="contact-map">
+                    <iframe
+                        width="520"
+                        height="465"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=520&amp;height=465&amp;hl=en&amp;q=%20Dhaka+(Tirme,Cases%20Can%20Canut)&amp;t=&amp;z=4&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    ></iframe
+                    ><a href="https://maps-generator.com/"></a>
+                </div>
+            </div>
+        </div>
+        <!--=====================================-->
         <!--=       Form Section Start       =-->
         <!--=====================================-->
         <div class="trm-form-media-section-area">
@@ -103,7 +123,7 @@
                                 <div class="trm-contact">
                                     <ul>
                                         <li>Ctra. de Sóller, km 8,2. 07120 Palma de Mallorca</li>
-                                        <li>Tel. +34 971 435 050. Fax +34 971 435 218</li>
+                                        <li><a href="Tel:+34971435050.Fax+34971435218">Tel. +34 971 435 050. Fax +34 971 435 218</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -126,32 +146,34 @@
                         </div>
                     </div>
                     <div class="row align-items-end">
-                        <div class="col-lg-10">
+                        <div class="col-lg-9">
                             <div class="trm-select-form-box">
                                 <div class="heading-area heading-form">
                                     <h2 class="title secondaryColor fw-bold">Formulario</h2>
                                 </div>
-                                <label for="form">Departamento</label>
-                                <select class="select-box" id="media" name="media-list" form="mediaform">
-                                    <option value="volvo">Información general</option>
-                                    <option value="saab">Información general</option>
-                                    <option value="opel">Información general</option>
-                                    <option value="audi">Información general</option>
-                                </select>
+                                <div class="form-box">
+                                    <label for="form">Departamento</label>
+                                    <select class="select-box" id="media" name="media-list" form="mediaform">
+                                        <option value="volvo">Información general</option>
+                                        <option value="saab">Información general</option>
+                                        <option value="opel">Información general</option>
+                                        <option value="audi">Información general</option>
+                                    </select>
+                                </div>
                                 <div class="form-box">
                                     <label>Nombre*</label>
-                                    <input class="from-control" type="text" id="name" name="name" placeholder="" required="" />
+                                    <input class="nombre" type="text" id="name" name="name" placeholder="" required="" />
                                 </div>
                                 <div class="form-box">
                                     <label>Email*</label>
-                                    <input class="from-control" type="text" id="name" name="name" placeholder="" required="" />
+                                    <input class="email" type="text" id="name" name="name" placeholder="" required="" />
                                 </div>
                                 <div class="form-box">
                                     <label>Asunto*</label>
-                                    <textarea id="message" name="message" placeholder=""></textarea>
+                                    <textarea class="asunto" id="message" name="message" placeholder=""></textarea>
                                 </div>
                                 <h4 class="form-title">* Campos obligatorios</h4>
-                                <p>
+                                <p class="form-des">
                                     TIRME tratará los datos personales facilitados a través del presente formulario con la finalidad de gestionar y atender su consulta, legitimado
                                     en el consentimiento mostrado mediante la remisión del mismo. Sus datos no serán comunicados a terceros salvo obligación legal. Puede obtener
                                     más información en nuestra Política de Privacidad, así como ejercitar sus derechos y contactar con nuestro Delegado de Protección de Datos a
@@ -159,8 +181,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-2">
-                            <div class="form-btn text-end">
+                        <div class="col-lg-3">
+                            <div class="top-btn">
                                 <a class="primary-btn" href="#">Enviar</a>
                             </div>
                         </div>
@@ -183,15 +205,15 @@
                                 </div>
                                 <div class="form-box">
                                     <label>Nombre*</label>
-                                    <input class="from-control" type="text" id="name" name="name" placeholder="" required="" />
+                                    <input class="nombre1" type="text" id="name" name="name" placeholder="" required="" />
                                 </div>
                                 <div class="form-box">
                                     <label>Email*</label>
-                                    <input class="from-control" type="email" id="email" name="email" placeholder="" required="" />
+                                    <input class="email1" type="email" id="email" name="email" placeholder="" required="" />
                                 </div>
                                 <div class="form-box text-bottom">
                                     <label>CV*</label>
-                                    <input class="from-control" type="text" id="name" name="name" placeholder="Examinar…" required="" />
+                                    <input class="cvl" type="text" id="name" name="name" placeholder="Examinar…" required="" />
                                 </div>
                                 <h4 class="form-title">* Campos obligatorios</h4>
                                 <p>
@@ -203,7 +225,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="form-btn text-end">
+                            <div class="middle-btn">
                                 <a class="primary-btn" href="#">Enviar</a>
                             </div>
                         </div>
@@ -235,8 +257,8 @@
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="form-btn text-end">
-                                <a class="primary-btn" href="#">Enviar</a>
+                            <div class="bottom-btn">
+                                <a class="primary-btn" href="#">Descargar</a>
                             </div>
                         </div>
                     </div>

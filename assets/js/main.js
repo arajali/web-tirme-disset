@@ -96,7 +96,7 @@
                     },
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 576,
                     settings: {
                         slidesToShow: sm_tablet_view,
                     },
@@ -263,5 +263,26 @@
         centerPadding: "0px",
         speed: 500,
         variableWidth: true,
+    });
+    $(".centerMode-slider2").slick({
+        centerMode: true,
+        infinite: true,
+        centerPadding: "0px",
+        speed: 500,
+        variableWidth: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    });
+    $("#calendar").datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"],
+    });
+    $("#calendar2").datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"],
     });
 })(jQuery);

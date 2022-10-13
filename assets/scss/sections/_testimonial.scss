@@ -1,3 +1,4 @@
+// trm-testimonial-section-area
 .trm-testimonial-section-area {
     background: $thirdColor;
     padding-top: 100px;
@@ -7,6 +8,7 @@
         max-width: 1500px;
         padding: 0 30px;
     }
+
     .trm-testimonial-text {
         position: absolute;
         max-width: 400px;
@@ -15,6 +17,7 @@
     }
     .centerMode-slider {
         position: relative;
+        &::before,
         &::after {
             position: absolute;
             z-index: 1;
@@ -27,6 +30,12 @@
             background: linear-gradient(270deg, #e2f1da 32%, rgba(255, 255, 255, 0) 100%);
             -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
+        }
+        &::before {
+            left: auto;
+            right: 0;
+            background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 32%, #e2f1da 100%);
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 32%, #e2f1da 100%);
         }
         .serivce-box img {
             bottom: 0;
@@ -87,6 +96,183 @@
             .slick-next {
                 right: -50px;
             }
+        }
+    }
+}
+// trm-testimonial-section-area
+.trm-testimonial-section-area2 {
+    background: url(../images/visita/educa-conciencia-tu-visita-tirme.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 110px;
+    .centerMode-slider .slick-track {
+        left: 200px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .centerMode-slider {
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 120px;
+            height: 26%;
+            background: -webkit-linear-gradient(270deg, #e4e5e9 32%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(270deg, #e4e5e9 32%, rgba(255, 255, 255, 0) 100%);
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+        &::before {
+            left: auto;
+            right: 0;
+            background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 32%, #e4e5e9 100%);
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 32%, #e4e5e9 100%);
+        }
+    }
+    .serivce-box img {
+        bottom: 0;
+        width: 200px;
+        height: 130px;
+    }
+
+    .trm-visita-testimonial-content {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .serivce-box {
+        position: relative;
+        .trm-video-area {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, -50%);
+            a {
+                border: 2px dashed $whiteColor;
+                width: 80px;
+                height: 80px;
+                line-height: 70px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 50%;
+                color: $whiteColor;
+                i {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+    .slick-center {
+        img {
+            transform: scale(1);
+            width: 750px;
+            height: 500px;
+        }
+        .trm-video-area {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+// trm-testimonial-section-area
+.trm-testimonial-section-area3 {
+    background: $whiteColor;
+    padding-top: 65px;
+    padding-bottom: 85px;
+    .trm-visita-test-content {
+        .trm-des {
+            margin-bottom: 0;
+        }
+    }
+    .centerMode-slider2 {
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 120px;
+            height: 26%;
+            background: -webkit-linear-gradient(270deg, #ffffff 32%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(270deg, #ffffff 32%, rgba(255, 255, 255, 0) 100%);
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+        &::before {
+            left: auto;
+            right: 0;
+            background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 32%, #ffffff 100%);
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 32%, #ffffff 100%);
+        }
+        .slick-track {
+            display: flex;
+            align-items: flex-end;
+        }
+        .slick-arrow {
+            border: none;
+            padding: 0;
+            font-size: 0;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+            @include transition();
+            &::before {
+                position: absolute;
+                content: "";
+                top: 160px;
+                background: url(../images/icon/slider_pre.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                left: 0;
+                width: 26px;
+                height: 49px;
+            }
+        }
+        .slick-next {
+            left: auto;
+            right: 0;
+            &::before {
+                background: url(../images/icon/slider_next.png);
+                left: 0;
+            }
+        }
+        &:hover {
+            .slick-arrow {
+                opacity: 1;
+                visibility: visible;
+            }
+            .slick-prev {
+                left: 0;
+            }
+            .slick-next {
+                right: -50px;
+            }
+        }
+    }
+}
+// trm-testimonial-section-area
+.trm-testimonial-section-area4 {
+    padding-bottom: 75px;
+    .trm-visita-test-content {
+        margin-left: 78px;
+        .trm-des {
+            margin-bottom: 0;
         }
     }
 }

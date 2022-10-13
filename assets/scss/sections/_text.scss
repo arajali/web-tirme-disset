@@ -5,6 +5,9 @@
     .text-content-area {
         max-width: 800px;
         margin: 0 auto;
+        p {
+            font-weight: 400;
+        }
         .primary-btn {
             margin-top: 40px;
         }
@@ -18,5 +21,26 @@
     padding-bottom: 105px;
     .heading-area {
         margin-bottom: 95px;
+    }
+    .slider-header-content {
+        h3 {
+            font-weight: 600;
+        }
+        span {
+            font-size: 28px;
+            font-weight: 300;
+        }
+    }
+}
+// <!--Text CSS -->
+.trm-text-section-area3 {
+    .heading-area {
+        margin-bottom: 60px;
+    }
+    .slider-header-content {
+        span {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 }

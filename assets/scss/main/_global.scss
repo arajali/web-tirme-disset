@@ -8,7 +8,7 @@ body {
     vertical-align: baseline;
     font-weight: 300;
     overflow-x: hidden;
-    line-height: 1.8;
+    line-height: 1.3;
     background: #fff;
 }
 input,
@@ -36,7 +36,7 @@ h5,
 h6 {
     font-family: $titleFont;
     color: $titleColor;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 h1 {
     font-size: 60px;
@@ -190,12 +190,10 @@ ul {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    padding: 15px 50px;
     border-radius: 50px;
+    background: $primaryColor;
     text-align: center;
     text-transform: capitalize;
-    background: $primaryColor;
-    padding: 0 15px;
     &:hover {
         background: $whiteColor;
         color: $whiteColor;
@@ -206,8 +204,8 @@ ul {
     @include btnStyle($primaryColor);
     font-size: 18px;
     font-weight: 300;
-    padding: 6px 45px;
     border: 1px solid transparent;
+    padding: 6px 45px;
     &:hover {
         border: 1px solid $primaryColor;
         color: $primaryColor;
@@ -226,25 +224,43 @@ ul {
     }
 }
 // sign-in-btn
-.trm-banner-btn {
+.last-btn,
+.first-btn {
     @include btnStyle(transparent);
     border: 2px solid $whiteColor;
+    padding: 0 12px 2px;
+    font-weight: 400;
     &:hover {
         background: $whiteColor;
         color: $primaryColor;
     }
 }
 // sign-in-btn
-.trm-header-sticky .trm-banner-btn {
+.tecnica-btn,
+.direccion-btn {
     @include btnStyle(transparent);
-    border: 2px solid $primaryColor;
-    color: $primaryColor;
+    border: 2px solid $whiteColor;
+    padding: 0 12px;
+    font-weight: 400;
     &:hover {
-        background: $primaryColor;
-        border-color: transparent;
-        color: $whiteColor;
+        background: $whiteColor;
+        color: $primaryColor;
     }
 }
+// sign-in-btn
+.trm-header-sticky {
+    .last-btn,
+    .first-btn {
+        @include btnStyle(transparent);
+        border: 2px solid $primaryColor;
+        color: $primaryColor;
+        padding: 0 12px;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}
+
 // secondary-btn
 .secondary-btn {
     @include btnStyle($thirdColor);
@@ -412,4 +428,111 @@ body {
             right: 35px;
         }
     }
+}
+// Calender css
+.ui-datepicker-next {
+    right: 59%;
+    left: auto;
+}
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover {
+    color: $secondaryColor;
+}
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+    display: none;
+}
+.ui-datepicker-title {
+    position: relative;
+}
+.ui-datepicker-next,
+.ui-datepicker-prev {
+    cursor: pointer;
+    z-index: 10;
+}
+.ui-datepicker-header {
+    background-color: transparent;
+    color: white;
+    font-family: $titleFont;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    max-width: 442px;
+    margin: 0 auto;
+}
+.ui-datepicker-next {
+    position: absolute;
+    left: 140px;
+    top: 1px;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 12px;
+        background: url(../images/icon/arrow_1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 9px;
+        height: 18px;
+        cursor: pointer;
+    }
+}
+.ui-datepicker-prev {
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 12px;
+        background: url(../images/icon/arrow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: auto;
+        width: 9px;
+        height: 18px;
+        cursor: pointer;
+    }
+}
+.ui-datepicker-calendar th {
+    padding: 10px;
+    color: $whiteColor;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.ui-datepicker-calendar {
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.ui-datepicker-title {
+    padding: 10px;
+}
+
+.ui-datepicker-calendar td {
+    padding: 0 18px;
+    line-height: 1.5;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    text-decoration: none;
+    color: $whiteColor;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    color: $whiteColor;
+    background: $secondaryColor;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.4s;
 }

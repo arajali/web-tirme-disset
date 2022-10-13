@@ -14,19 +14,22 @@
         }
         .trm_shape1 {
             position: absolute;
-            top: 68px;
+            top: 56px;
             left: 30.5%;
         }
         .trm_shape2 {
             position: absolute;
             left: 50%;
-            top: 68px;
+            top: 56px;
             transform: translateX(-50%);
         }
         .trm_shape3 {
             position: absolute;
-            top: 68px;
+            top: 56px;
             right: 29.5%;
+        }
+        .group-btn-two {
+            padding-top: 18px;
         }
     }
     .trm-group-content {
@@ -42,9 +45,9 @@
         padding-left: 30px;
     }
     .tecnica {
-        left: 12px;
+        left: 19px;
     }
     .direccion {
-        left: 16px;
+        left: 10px;
     }
 }

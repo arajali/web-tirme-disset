@@ -11,6 +11,7 @@
             h2 {
                 font-size: 30px;
                 line-height: 1;
+                color: #006747;
                 a {
                     color: $primaryColor;
                     transition: 0.4s;
@@ -23,17 +24,38 @@
     }
     .prensa-date-list {
         ul {
-            li {
-                margin-bottom: 62px;
+            .list_1 {
+                margin-bottom: 75px;
+            }
+            .list_2 {
+                margin-bottom: 70px;
+            }
+            .list_3 {
+                margin-bottom: 60px;
+            }
+            .list_4 {
+                margin-bottom: 55px;
+            }
+            .list_5 {
+                margin-bottom: 60px;
             }
         }
     }
     .prensa-btn-list {
-        .prensa-btn {
+        .prensa_1 {
+            margin-bottom: 45px;
+        }
+        .prensa_2 {
+            margin-bottom: 45px;
+        }
+        .prensa_3 {
             margin-bottom: 35px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+        }
+        .prensa_4 {
+            margin-bottom: 35px;
+        }
+        .prensa_5 {
+            margin-bottom: 35px;
         }
     }
     .trm-prensa-btn {
@@ -48,28 +70,40 @@
             }
         }
         .prensa-date-list {
+            li {
+                font-size: 20px;
+            }
             .date_1 {
-                margin-bottom: 60px;
+                margin-bottom: 72px;
             }
             .date_2 {
-                margin-bottom: 100px;
+                margin-bottom: 63px;
             }
             .date_3 {
-                margin-bottom: 50px;
+                margin-bottom: 100px;
             }
             .date_4 {
-                margin-bottom: 75px;
+                margin-bottom: 53px;
+            }
+            .date_5 {
+                margin-bottom: 88px;
             }
         }
         .prensa-btn-list {
-            .prensa_1 {
+            .prensa_6 {
+                margin-bottom: 45px;
+            }
+            .prensa_7 {
+                margin-bottom: 45px;
+            }
+            .prensa_8 {
+                margin-bottom: 82px;
+            }
+            .prensa_9 {
+                margin-bottom: 35px;
+            }
+            .prensa_10 {
                 margin-bottom: 80px;
-            }
-            .prensa_2 {
-                margin-bottom: 30px;
-            }
-            .prensa_3 {
-                margin-bottom: 75px;
             }
         }
     }

@@ -6,7 +6,7 @@
         margin-bottom: 40px;
     }
     .form-box {
-        margin-bottom: 15px;
+        margin-bottom: 13px;
         label {
             margin-bottom: 5px;
         }
@@ -28,12 +28,12 @@
     .progress-area {
         padding-left: 10px;
         .title {
-            font-size: 50px;
+            font-size: 40px;
         }
     }
     .progress-area {
         .progress {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             background: transparent;
             height: 55px;
             position: relative;
@@ -44,7 +44,7 @@
                 border-radius: 5px;
                 .progress-title {
                     position: absolute;
-                    top: 8px;
+                    top: 11px;
                     left: 20px;
                     opacity: 0;
                     font-size: 18px;
@@ -52,6 +52,7 @@
                 }
                 span {
                     font-size: 18px;
+                    font-weight: 400;
                 }
             }
             .title1 {
@@ -111,10 +112,24 @@
 }
 // trm-form-media-section-area
 .trm-form-media-section-area {
-    padding-top: 100px;
+    position: relative;
+    padding-top: 90px;
     padding-bottom: 60px;
     .heading-area {
         margin-bottom: 15px;
+    }
+    .trm-contact {
+        ul {
+            li {
+                font-size: 20px;
+                font-weight: 400;
+                a {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $bodyColor;
+                }
+            }
+        }
     }
     .heading-form {
         margin-bottom: 0;
@@ -165,19 +180,33 @@
         }
     }
     .trm-select-form-box {
+        padding-right: 10px;
         .select-box {
             width: 100%;
             border: 1px solid #979797;
             padding: 7px 10px;
             border-radius: 5px;
+            font-size: 20px;
+            font-weight: 400;
         }
         .form-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            label {
+                font-size: 30px;
+                font-weight: 700;
+                color: #006747;
+                min-width: 220px;
+            }
             textarea,
             input {
                 width: 100%;
                 border: 1px solid #979797;
                 padding: 6px 10px;
                 border-radius: 5px;
+                font-size: 20px;
+                font-weight: 400;
             }
             textarea {
                 height: 225px;
@@ -186,7 +215,17 @@
         }
         .form-title {
             margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 400;
         }
+        .form-des {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .top-btn {
+        position: absolute;
+        bottom: 21.5%;
     }
 }
 // trm-form-media-section-area
@@ -201,18 +240,32 @@
     }
     .trm-select-form-box {
         max-width: 950px;
+        .media-title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
     }
-
     .text-bottom {
         margin-bottom: 20px;
+    }
+    .middle-btn {
+        position: absolute;
+        bottom: 40.5%;
     }
 }
 // trm-form-media-section-area
 .trm-form-test-section-area {
+    position: relative;
     padding-top: 105px;
+    padding-bottom: 70px;
     .heading-area {
         span {
             font-weight: 300;
         }
+    }
+    .bottom-btn {
+        position: absolute;
+        bottom: 15%;
     }
 }

@@ -9,9 +9,6 @@
         float: left;
     }
 }
-.trm-banner-btn {
-}
-
 @media only screen and (max-width: 1650px) {
     .trm-banner-section-area .trm-banner-item .banner-header-content {
         margin-left: 28.5%;
@@ -24,6 +21,11 @@
     .container {
         max-width: 1300px;
     }
+    .custom-container {
+        max-width: 1510px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
 }
 @media only screen and (max-width: 1520px) {
     .trm-banner-section-area .trm-banner-item .banner-header-content {
@@ -32,6 +34,12 @@
     .trm-banner-section-area .banner-circle-shape {
         width: 700px;
         height: 700px;
+    }
+    .trm-group-section-area .tecnica {
+        left: 18px;
+    }
+    .trm-group-section-area .direccion {
+        left: 9px;
     }
 }
 @media only screen and (max-width: 1440px) {
@@ -43,7 +51,7 @@
 /*as col-md*/
 @media only screen and (max-width: 1366px) {
     .trm-header-section .trm-main-menu > ul > li {
-        margin-right: 25px;
+        margin-right: 15px;
     }
     .trm-header-section .header-btn2 .last-btn,
     .trm-header-section .header-btn2 .first-btn {
@@ -70,10 +78,24 @@
         margin-right: 20px;
     }
     .trm-group-section-area .tecnica {
-        left: 50px;
+        left: 0;
+        top: 6px;
     }
     .trm-group-section-area .direccion {
-        left: 27px;
+        left: 22px;
+        top: 6px;
+    }
+    .trm-group-section-area .trm-group-box .trm_shape1 {
+        left: 29.5%;
+    }
+    .trm-form-media-section-area .top-btn {
+        bottom: 20.5%;
+    }
+    .trm-form-media-section-area2 .middle-btn {
+        bottom: 38.5%;
+    }
+    .trm-date-section-area .ui-datepicker-prev:after {
+        left: 130px;
     }
 }
 
@@ -98,7 +120,7 @@
         font-size: 13px;
     }
     .trm-blog-section-area .trm-blog-item .blog-title {
-        font-size: 22px;
+        font-size: 24px;
     }
     .trm-form-section-area .progress-area {
         position: relative;
@@ -114,6 +136,22 @@
         position: relative !important;
         margin-bottom: 150px;
     }
+    .trm-slider-section-area .slider-header-content {
+        margin-bottom: 50px;
+    }
+    .trm-visita-calender-area .trm-calender-content {
+        padding-left: 45px;
+    }
+    .trm-visita-calender-area .ui-datepicker-prev:after {
+        left: 130px;
+    }
+    .trm-visita-calender-area .ui-datepicker-calendar td {
+        padding: 0 14px;
+    }
+    .trm-recogida-slider-area2 .heading-area .title,
+    .trm-recogida-slider-area .heading-area .title {
+        font-size: 45px;
+    }
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
     .trm-group-section-area .tecnica {
@@ -128,6 +166,9 @@
     }
     .trm-group-section-area .trm-group-box .trm_shape2 img {
         max-height: 135px;
+    }
+    .trm-visita-calender-area .ui-datepicker-header {
+        left: 24px;
     }
 }
 /*as col-sm*/
@@ -209,10 +250,6 @@
     &.trm-header-sticky .canvas a:hover {
         color: $primaryColor;
     }
-    .trm-footer-section-area .trm-footer-team-img,
-    .trm-footer-section-area .trm-footer-logo {
-        justify-content: center;
-    }
     .trm-footer-section-area .trm-footer-logo {
         margin-bottom: 20px;
     }
@@ -276,9 +313,6 @@
         padding-top: 35px;
         padding-bottom: 65px;
     }
-    .trm-slider-section-area .slider-item {
-        padding: 120px 180px 185px;
-    }
     .trm-cta-section-area5 .cta-area {
         padding-left: 90px;
     }
@@ -340,7 +374,7 @@
         padding: 12px 0;
     }
     .trm-group-section-area .direccion {
-        left: -22px;
+        left: -28px;
     }
     .trm-group-section-area .trm-group-box {
         margin-right: 0;
@@ -352,7 +386,78 @@
         padding-bottom: 65px;
     }
     .trm-feature-section-area4 {
+        padding-bottom: 30px;
+        padding-top: 70px;
+    }
+    .trm-group-section-area .tecnica {
+        left: 50px;
+    }
+    .trm-testimonial-section-area2 {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    .trm-testimonial-section-area3 {
+        .trm-visita-test-content {
+            margin-bottom: 50px;
+        }
+    }
+    .trm-testimonial-section-area4 .trm-visita-test-content {
+        margin-left: 0;
+    }
+    .trm-testimonial-section-area4 .trm-visita-test-content {
+        padding-top: 50px;
+    }
+    .trm-testimonial-section-area4 .trm-visita-test-content {
+        margin-bottom: 0;
+    }
+    .trm-visita-calender-area .trm-calender-content {
+        padding-left: 0;
+    }
+    .trm-visita-calender-area {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .trm-visita-calender-area .ui-datepicker-calendar {
+        margin: 0;
+    }
+    .trm-form-media-section-area {
+        padding-top: 55px;
+    }
+    .trm-form-media-section-area2 .middle-btn,
+    .trm-form-test-section-area .bottom-btn,
+    .trm-form-media-section-area .top-btn {
+        position: static;
+    }
+    .trm-form-test-section-area {
+        padding-top: 65px;
+    }
+    .trm-map-section-area .contact-map iframe {
+        height: 550px;
+    }
+    .trm-date-section-area .ui-datepicker-calendar {
+        margin: 0;
+    }
+    .trm-date-section-area .date-list {
+        padding-top: 40px;
+    }
+    .trm-counter-section-area2 {
         padding-bottom: 40px;
+    }
+    .trm-date-section-area {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+    .trm-form-media-section-area .trm-select-form-box .form-box {
+        display: block !important;
+    }
+    .trm-form-media-section-area .trm-select-form-box .form-box label {
+        margin-bottom: 10px;
+    }
+    .trm-prensa-section-area .trm-prensa-content .trm-prensa-text h2 {
+        font-size: 25px;
+    }
+    .trm-form-section-area .form-area {
+        padding-right: 0;
     }
 }
 
@@ -371,9 +476,6 @@
     }
     .trm-gallery-section-area2 .trm_gallery_image-area .gallery-img {
         width: 48.7%;
-    }
-    .trm-counter-section-area .trm-counter-content-box {
-        text-align: center !important;
     }
     .trm-counter-section-area .trm-counter-content-box .counter-box {
         max-width: 100%;
@@ -430,6 +532,40 @@
     .trm-counter-section-area .odometer {
         font-size: 50px;
     }
+    .trm-copyright-area .copyright-area,
+    .trm-form-media-section-area .trm-form-content {
+        display: block !important;
+        text-align: center;
+    }
+    .trm-copyright-area .copyright-content .content {
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .trm-form-media-section-area .trm-form-text {
+        margin-bottom: 50px;
+    }
+    .trm-form-media-section-area .trm-select-form-box .form-box textarea {
+        height: 150px;
+    }
+    .trm-visita-calender-area .trm-calender-content {
+        margin-top: 30px;
+    }
+    .trm-visita-calender-area .calender-btn {
+        text-align: start !important;
+    }
+    .trm-visita-calender-area .calender-btn {
+        padding-top: 25px;
+    }
+    .trm-slider-section-area1 .slider-header-content {
+        max-width: 500px;
+        text-align: center;
+    }
+    .trm-footer-section-area .trm-footer-logo .trm-logo {
+        margin-right: 24px;
+    }
+    .trm-group-section-area .trm-group-box .group-btn-two {
+        padding-top: 4px;
+    }
 }
 
 /*medium mobile device*/
@@ -438,14 +574,95 @@
     .trm-main-logo .sticky-logo img {
         max-width: 100px;
     }
-    .trm-slider-section-area .slider-item {
-        padding: 250px 45px 185px;
-    }
     .trm-slider-section-area .sc-slick-slides:hover .prev {
         left: 30px;
     }
+    .trm-date-section-area .ui-datepicker-calendar .ui-state-default {
+        font-size: 22px;
+    }
+    .trm-form-media-section-area .trm-select-form-box .form-box label,
+    .trm-form-media-section-area2 .trm-select-form-box .media-title {
+        font-size: 25px;
+    }
+    .trm-prensa-section-area .prensa-date-list {
+        margin-bottom: 25px;
+    }
+    .trm-slider-section-area .slider-header-content1 {
+        max-width: 300px;
+    }
     .trm-slider-section-area .slider-header-content .slider-title {
-        font-size: 30px;
+        font-size: 26px;
+    }
+    .trm-serice-section-area .services-area .trm-service-box {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .trm-serice-section-area2 .services-area .trm-service-box {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .sc-slick-slides:hover .prev {
+        left: 17px;
+    }
+    .sc-slick-slides:hover .next {
+        right: 92px;
+    }
+
+    .trm-blog-section-area .sc-slick-slides:hover .prev {
+        right: 40px;
+        left: auto;
+    }
+    .trm-blog-section-area .sc-slick-slides:hover .next {
+        right: 0;
+        left: auto;
+    }
+
+    .trm-feature-section-area .trm-feature-image {
+        margin-left: -15px;
+        margin-right: 30px;
+    }
+    .trm-counter-section-area .odometer {
+        font-size: 40px;
+    }
+    .heading-area .title {
+        font-size: 36px;
+    }
+    .trm-counter-section-area .trm-counter-content-box .counter-image img {
+        max-width: 65px;
+    }
+    .trm-blog-section-area .trm-blog-item .blog-images img {
+        width: 100%;
+    }
+    .trm-feature-section-area2 .trm-feature-image {
+        margin-left: -15px;
+        margin-right: 30px;
+    }
+    .trm-serice-section-area2 .services-area .trm-service-content .description {
+        font-size: 18px;
+    }
+    .trm-serice-section-area3 .serivce-image img {
+        width: 100%;
+    }
+    .trm-serice-section-area3 .serivce-box {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .trm-serice-section-area2 .services-area .service-title {
+        margin-bottom: 15px;
+    }
+    .trm-feature-section-area3 .trm-feature-image {
+        margin-left: -15px;
+        margin-right: 30px;
+    }
+    .trm-counter-section-area2 .trm-counter-content-box .sc-counter-box .odometer {
+        font-size: 40px;
+    }
+    .trm-text-section-area2 .slider-header-content h3 {
+        font-size: 25px;
+    }
+    .trm-text-section-area2 .slider-header-content span {
+        font-size: 24px;
     }
 }
 
@@ -455,11 +672,8 @@
     .blog-content .description {
         font-size: 15px;
     }
-    .heading-area .title {
-        font-size: 30px;
-    }
+
     .trm-footer-section-area .trm-footer-logo .trm-logo {
-        margin-right: 10px;
         max-width: 85px;
     }
     .trm-form-section-area .progress-area .progress .progress-bar .progress-title {
@@ -481,7 +695,7 @@
     }
     .trm-recogida-slider-area .slider-item .sub-tilte,
     .trm-recogida-slider-area2 .slider-item .sub-tilte {
-        font-size: 16px;
+        font-size: 15px;
     }
     .trm-prensa-section-area .trm-prensa-content .trm-prensa-text h2 {
         font-size: 22px;
@@ -495,6 +709,20 @@
     .trm-group-section-area .direccion,
     .trm-group-section-area .tecnica {
         max-width: 140px;
+    }
+    .trm-visita-calender-area .ui-datepicker-calendar .ui-state-default {
+        font-size: 16px;
+    }
+    .trm-visita-calender-area .ui-datepicker-calendar .ui-state-active {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .trm-visita-calender-area .ui-datepicker-header {
+        left: 22px;
+    }
+    .ui-datepicker-prev {
+        left: -8px;
     }
 }
 /*small mobile device*/

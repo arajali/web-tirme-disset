@@ -15,12 +15,14 @@
                     width: 1px;
                     background: $bodyColor;
                     height: 12px;
-                    top: 11px;
+                    top: 6px;
                     left: -12px;
                 }
                 a {
                     color: $bodyColor;
                     transition: 0.4s;
+                    font-family: $othersFont;
+                    font-weight: 400;
                     &:hover {
                         color: $secondaryColor;
                     }
